@@ -8,7 +8,7 @@ app.use(express.json());
 
 // ==== CONFIGURE THESE ====
 const BOT_TOKEN = "7326125859:AAG8-uLiYmw-rzsa1SsyECo57pD7tj_3hiY"; // Replace with your BotFather token
-const CHAT_ID = "-1002666905126";     // Replace with your chat ID
+const CHAT_ID = "-1002774812952";     // Replace with your chat ID
 // =========================
 
 app.post("/send-message", async (req, res) => {
