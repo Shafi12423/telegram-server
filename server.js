@@ -7,8 +7,8 @@ app.use(cors());
 app.use(express.json());
 
 // ==== CONFIGURE THESE ====
-const BOT_TOKEN = "7326125859:AAG8-uLiYmw-rzsa1SsyECo57pD7tj_3hiY"; // Replace with your BotFather token
-const CHAT_ID = "-1002774812952";     // Replace with your chat ID
+const BOT_TOKEN = "7326125859:AAG8-uLiYmw-rzsa1SsyECo57pD7tj_3hiY";
+const CHAT_ID = "-1002774812952";
 // =========================
 
 app.post("/send-message", async (req, res) => {
@@ -25,7 +25,8 @@ app.post("/send-message", async (req, res) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           chat_id: CHAT_ID,
-          text: text
+          text: text,
+          disable_web_page_preview: true // 🔹 Link preview off
         })
       }
     );
